@@ -1,0 +1,61 @@
+{% extends 'classroom/base.html' %}
+{% load static %}
+{% block content %}
+
+{% if messages %}
+<div class="alert alert-primary alert-dismissible fade show" role="alert">
+  {% for message in messages %}
+    <div class="alert {% if message.tags %} alert-{{ message.tags }}{% endif %}">{{ message|safe }}</div>
+  {% endfor %}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+{% endif %}
+
+<div class="banner">
+      <img src="{% static 'images/first.PNG' %}" alt="">
+      <div class="content">
+        <h1>Marks Management System</h1>
+        <p>A Student-Teacher Portal</p>
+      </div>
+    </div>
+
+    <div class="about">
+      <h1>About</h1>
+      <p>Welcome to the MITWPU Marks Management System Portal – a purpose-built platform to support the academic journey of MITWPU students and faculty. This portal provides a secure and intuitive interface for teachers to efficiently record and manage student marks, while offering students easy access to their academic records. Focused on transparency, accessibility, and streamlined workflows, the system empowers both students and faculty at MITWPU to stay engaged and informed, fostering a collaborative and results-driven educational environment.</p>  </div>
+
+    <div class="use-content">
+      <h1>Services</h1>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="box">
+            <div class="imgBx">
+              <img src="{% static 'images/teacher.PNG' %}" alt="">
+            </div>
+            <div class="content">
+              <h3>For Teacher</h3>
+              <ol>
+                <li>Please Login through ID and password or contact with mitwpu@adminstaff.com</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="box">
+            <div class="imgBx">
+              <img src="{% static 'images/homeimg.PNG' %}" alt="">
+            </div>
+            <div class="content">
+              <h3>For Student</h3>
+              <ol>
+                <li>Please Login with PRN or contact with mitwpu@studentportal.com</li>
+              </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+{% endblock %}
