@@ -28,7 +28,7 @@ SECRET_KEY = '13x8r2se41dawv$7!a-p_h4ni$^i^+r@le7wuadd6gmzb=$ss*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["https://dashboard.render.com/web/srv-csrgii68ii6s73b5r9g0/deploys/dep-csrgiie8ii6s73b5r9kg"]
+ALLOWED_HOSTS = ['studentsmarksmanager.onrender.com']
 
 AUTH_USER_MODEL = 'classroom.User'
 
